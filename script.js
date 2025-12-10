@@ -34,14 +34,21 @@ const swiper = new Swiper(".swiper", {
     slidesPerView: "auto",
     spaceBetween: 10,
     speed: 800,
-    freeMode: false,
+
     mousewheel: {
         thresholdDelta: 30,
     },
+
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
     on: {
         click() {
             if (typeof swiper.clickedIndex !== "undefined") {
@@ -50,6 +57,7 @@ const swiper = new Swiper(".swiper", {
         },
     },
 });
+
 
 // Particles
 particlesJS("particles-js", {
