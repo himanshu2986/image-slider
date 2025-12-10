@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider (Stranger Things)</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Swiper CSS CDN (correct one) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Background music -->
+    <audio id="background-music" loop>
+        <source
+            src="./Image and Song/song-list_stranger-things-luxide-remix-no-copyright-music.mp3"
+            type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Play / Pause button -->
+    <button id="play-pause-button">
+        <ion-icon class="audio-icon" id="play-music" name="play"></ion-icon>
+        <ion-icon class="audio-icon hidden" id="pause-music" name="pause"></ion-icon>
+    </button>
+
+    <!-- Particles -->
+    <div id="particles-js" class="particles"></div>
+
+    <!-- Slider -->
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img
+                        src="./Image and Song/Lucas.jpg" />
+                    <p>Lucas</p>
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="./Image and Song/Mike.jpg" />
+                    <p>Mike</p>
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="./Image and Song/Max.jpg" />
+                    <p>Max</p>
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="./Image and Song/Will.jpg" />
+                    <p>Will</p>
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="./Image and Song/Eleven.jpg" />
+                    <p>Eleven</p>
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="./Image and Song/Dustin.jpg" />
+                    <p>Dustin</p>
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="./Image and Song/Eddie.jpg" />
+                    <p>Eddie Munson</p>
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="./Image and Song/Steve.jpg" />
+                    <p>Steve</p>
+                </div>
+                <div class="swiper-slide">
+                    <img
+                        src="./Image and Song/Robin.jpg" />
+                    <p>Robin</p>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
