@@ -28,35 +28,37 @@ audio.addEventListener("ended", function () {
 
 // Swiper
 const swiper = new Swiper(".swiper", {
-    grabCursor: true,
+    grabCursor: true,              // Cursor feedback
     initialSlide: 4,
     centeredSlides: true,
     slidesPerView: "auto",
     spaceBetween: 10,
-    speed: 800,
 
-    mousewheel: {
-        thresholdDelta: 30,
+    speed: 900,                    // Smooth animation
+    loop: true,                    // Loop back to first slide
+
+    autoplay: {                    // Auto slideshow
+        delay: 3000,
+        disableOnInteraction: false
     },
 
-    pagination: {
+    pagination: {                  // Position feedback
         el: ".swiper-pagination",
         clickable: true,
     },
 
-    navigation: {
+    navigation: {                  // Arrow feedback
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
 
-    on: {
-        click() {
-            if (typeof swiper.clickedIndex !== "undefined") {
-                swiper.slideTo(swiper.clickedIndex);
-            }
-        },
-    },
+    mousewheel: {
+        forceToAxis: true,
+        sensitivity: 1,
+    }
 });
+
+
 
 
 // Particles
