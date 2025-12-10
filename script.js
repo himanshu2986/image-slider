@@ -1,9 +1,11 @@
+// Get background audio element
 const audio = document.getElementById("background-music");
 const playPauseButton = document.getElementById("play-pause-button");
 const playIcon = document.getElementById("play-music");
 const pauseIcon = document.getElementById("pause-music");
 
 let isPlaying = false;
+// Toggle play and pause of background music
 
 function togglePlayPause() {
     if (isPlaying) {
